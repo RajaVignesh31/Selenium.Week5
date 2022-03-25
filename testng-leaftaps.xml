@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+<parameter name="URL" value="http://leaftaps.com/opentaps/" />
+  <test thread-count="5" name="TestSequence">
+    <classes>
+      <class name="week5.assignments.DeleteLead"/>
+      <class name="week5.assignments.CreateLead"/>
+      <class name="week5.assignments.DuplicateLead"/>
+      <class name="week5.assignments.MergeLead"/>
+      <class name="week5.assignments.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="5" parallel="classes" name="TestParallel">
+    <classes>
+      <class name="week5.assignments.DeleteLead"/>
+      <class name="week5.assignments.CreateLead"/>
+      <class name="week5.assignments.DuplicateLead"/>
+      <class name="week5.assignments.MergeLead"/>
+      <class name="week5.assignments.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

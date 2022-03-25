@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Suite">
+
+<parameter name="URL" value="https://dev111399.service-now.com/"/>
+
+  <test thread-count="4" name="Test">
+    <classes>
+      <class name="week5.assignments.CreateIncidentDataProvider"/>
+      <class name="week5.assignments.UpdateIncidentDataProvider"/>
+      <class name="week5.assignments.AssignIncidentDataProvider"/>
+      <class name="week5.assignments.DeleteIncidentDataProvider"/>
+    </classes>    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
